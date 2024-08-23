@@ -1,7 +1,15 @@
 * {
     padding: 0px;
     margin: 0px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-size: large;
+    font-style: italic; */
 }
+
+html {
+    font-size: 20px;
+}
+
 
 header {
     position: fixed;
@@ -22,19 +30,44 @@ header {
 
     nav {
         /* height: 100%; */
-         /* padding-right: 20px; */
-         
-         margin-right: 20px;
+        /* padding-right: 20px; */
+
+        margin-right: 20px;
+
         /* background-color: aliceblue; */
+        a {
+            transition-duration: 1s;
+        }
+
+        a:hover {
+            background-color: aliceblue;
+            transition-duration: 1s;
+        }
     }
 }
+
 main {
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
     /* padding-top: 20px;
      */
-     margin-top: 30px;
-     margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
+
+    .news {
+        font-size: 1rem;
+    }
+
+    h1.main-headings {
+        font-size: 1.5em;
+         /* font-size: 30px; */
+    }
+
+
 }
+
 footer {
     position: fixed;
     width: 100%;
@@ -45,7 +78,7 @@ footer {
     z-index: 2;
 }
 
-#a1{
+#a1 {
     margin: auto;
     width: 80%;
     height: 400px;
@@ -56,8 +89,8 @@ footer {
 .inner-div-1 {
     position: absolute;
     bottom: 0;
-     /* top: 200%; */
-     text-align: center;
+    /* top: 200%; */
+    text-align: center;
     border-radius: 50%;
     right: 0;
     /* padding-top: 20px; */
@@ -67,8 +100,9 @@ footer {
     border: 1px solid red;
     width: 200px;
     height: 200px;
-    
+
 }
+
 .inner-div-2 {
     position: absolute;
     background-color: yellow;
@@ -79,9 +113,9 @@ footer {
 
 .container {
     display: flex;
-    /* flex-direction: row; */
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 
     .img-container {
         /* margin: 10px; */
@@ -92,11 +126,10 @@ footer {
         overflow: hidden;
 
         img {
-            
+
             height: 100%;
             width: 100%;
             object-fit: contain;
         }
     }
 }
-
